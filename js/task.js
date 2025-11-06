@@ -140,7 +140,6 @@ console.log(arithmeticMean);
 Створи змінну days, порахуй, скільки це годин (days * 24),
 і виведи повідомлення.
 */
-
 const days = 7;
 const hoursOfThisDays = days * 24;
 console.log(`У ${days} днях ${hoursOfThisDays} годин`);
