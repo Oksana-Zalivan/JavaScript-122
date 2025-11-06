@@ -1,13 +1,15 @@
-/* Завдання 1 */
+/* Завдання 1 
 const myName = "Oksana";
 console.log(myName);
+*/
 
-/* Завдання 2 */
+/* Завдання 2 
 const age = 37;
 const message = `Мені ${age} років`;
 console.log(message);
+*/
 
-/* Завдання 3 */
+/* Завдання 3 
 const x = 9;
 const y = 3;
 const result1 = x + y;
@@ -23,13 +25,15 @@ console.log(result3);
 console.log(result4);
 console.log(result5);
 console.log(result6);
+*/
 
-/* Задання 4 */
+/* Задання 4 
 const city = "Korosten";
 const message2 = `Я живу в місті ${city}`;
 console.log(message2);
+*/
 
-/* Завдання 5 */
+/* Завдання 5 
 const firstName = "ksenya";
 const lastName = "martinovska";
 const emailDomen = "@gmail.com";
@@ -37,64 +41,111 @@ const fullName = firstName + lastName;
 const myEmail = fullName + emailDomen;
 
 console.log(myEmail);
+*/
 
-/* Завдання 6 */
+/* Завдання 6 
 const price = 500;
 const message3 = "Ціна: " + price + " грн"
 
 console.log(message3);
+*/
 
-/* 1. Ім’я користувача
-Створи змінну userName і запиши в неї своє ім’я.
+/* 1. Ім'я користувача
+Створи змінну userName і запиши в неї своє ім'я.
 Виведи його в консоль.
+
+const userName = "Oksana";
+console.log(userName);
 */
 
 /* 2. Вік
 Створи змінну age і присвой будь-яке число.
 Виведи повідомлення: "Мені X років".
+
+const age = 37;
+console.log(age);
 */
 
 /* 3. Назва міста
 Створи змінну city, запиши в неї назву твого міста
 і виведи фразу: "Я живу в CITY".
+
+const myCity = "Коростень";
+console.log(`Я живу в місті ${myCity}`);
 */
 
 /* 4. Привітання з двох частин
 Створи дві змінні: firstName і lastName.
-Об’єднай їх у змінну fullName через пробіл і виведи у консоль.
+Об`єднай їх у змінну fullName через пробіл і виведи у консоль.
+
+const firstName = "Oksana";
+const lastName = "Zalivan";
+const fullName = `${firstName} ${lastName}`;
+console.log(fullName);
 */
 
 /* 5. Площа прямокутника
 Створи змінні width і height, обчисли площу (width * height)
 і виведи результат.
+
+const width = 5;
+const height = 6;
+const area = width * height;
+
+console.log(area);
 */
+
 
 /* 6. Знижка в магазині
 Є змінні price = 1000 і discount = 10 (у відсотках).
 Знайди кінцеву ціну після знижки й виведи її.
-*/ї
+
+const price = 1000;
+const discount = 10;
+const result = price - (discount * price / 100);
+console.log(result);
+*/
+
 
 /* 7. Температура
 Створи змінну celsius = 20.
 Порахуйте температуру у фаренгейтах (celsius * 9/5 + 32).
+
+const celsius = 20;
+const fahrenheit = celsius * 9 / 5 + 32;
+console.log(fahrenheit);
 */
 
 /* 8. Вік через 5 років
 Є змінна age.
 Обчисли, скільки буде через 5 років, і виведи повідомлення.
 */
+const myAge = 37;
+const myNewAge = myAge + 5;
+console.log(`Через 5 років мені буде ${myNewAge}`);
+
 
 /* 9. Середнє трьох чисел
 Створи три змінні a, b, c.
 Обчисли середнє арифметичне: (a + b + c) / 3.
 */
+const a = 25;
+const b = 49;
+const c = 16;
+const arithmeticMean = (a + b + c) / 3;
+console.log(arithmeticMean);
+
 
 /* 10. Кількість годин у днях
 Створи змінну days, порахуй, скільки це годин (days * 24),
 і виведи повідомлення.
 */
+const days = 7;
+const hoursOfThisDays = days * 24;
+console.log(`У ${days} днях ${hoursOfThisDays} годин`);
 
-/* Ім’я користувача
+
+/* Ім`я користувача
 Створи змінну userName і запиши в неї своє ім’я.
 Виведи повідомлення:
 "Привіт, userName!".
@@ -176,4 +227,76 @@ console.log(message3);
 Мінімальне і максимальне число
 Є a = 10, b = 25, c = 7.
 Знайди мінімальне і максимальне (Math.min(), Math.max()).
+*/
+
+/*
+Ось 30 різних завдань на методи рядків у JavaScript. Без розв’язків — лише чіткі ТЗ, приклади та підказка, які методи варто використати.
+
+Базові операції (довжина, регістр, обрізання)
+
+Довжина ніка: для const nick = "TopMind14" виведи довжину ніка. (length)
+
+Верхній регістр: перетвори "javascript" у "JAVASCRIPT". (toUpperCase)
+
+Нижній регістр: перетвори "HeLLo" у "hello". (toLowerCase)
+
+Прибрати пробіли: із " hello world " отримай "hello world". (trim / trimStart / trimEnd)
+
+Перший символ: поверни перший символ зі слова "Coffee" → "C". (charAt / [0] / at)
+
+Останній символ: поверни останній символ зі слова "React" → "t". (at(-1))
+
+Повторення: з рядка "-" створити роздільник "-----" (5 разів). (repeat)
+
+Об’єднання: з "Hello" і "World" отримай "Hello World". (concat або шаблонний літерал)
+
+Заповнення зліва: перетвори "7" у "007" до довжини 3. (padStart)
+
+Заповнення справа: перетвори "JS" у "JS***" до довжини 5. (padEnd)
+
+Пошук і вирізання (індекси, фрагменти)
+
+Пошук підрядка: перевір, чи є "script" у "JavaScript". (includes / indexOf)
+
+Позиція першого входження: знайди індекс "a" у "bananas". (indexOf)
+
+Позиція останнього входження: знайди останній індекс "a" у "bananas". (lastIndexOf)
+
+Починається з…: перевір, чи починається "frontend" із "front". (startsWith)
+
+Закінчується на…: перевір, чи закінчується "readme.md" на ".md". (endsWith)
+
+Вирізати частину: із "JavaScript" отримай "Script". (slice / substring)
+
+Перші N символів: з "Learning JS" отримай перші 8 символів → "Learning". (slice)
+
+Обрізати до довжини: з "Hello, world!" зроби прев’ю 10 символів + "..." → "Hello, wor...". (slice + конкатенація)
+
+Заміни, розбиття, складання
+
+Заміна першого входження: "I love JS, JS is fun" → заміни перше "JS" на "JavaScript". (replace)
+
+Заміна всіх входжень: те саме, але заміни всі "JS" на "JavaScript". (replaceAll / replace з RegExp)
+
+Slugify заголовка: "Hello World: JS Basics" → "hello-world-js-basics". (toLowerCase + trim + replaceAll пробілів/небукв)
+
+Спліт слова: "red,green,blue" → масив ["red","green","blue"]. (split)
+
+Порахувати слова: у реченні "I love JavaScript so much" порахуй кількість слів. (trim + split(" ") + length)
+
+Реверс рядка: "JavaScript" → "tpircSavaJ". (split + reverse + join)
+
+Форматування та перевірки
+
+Title Case: "hello world from js" → "Hello World From Js". (split + map + toUpperCase першої літери + join)
+
+Маскування картки: з "1234567812345678" зроби "**** **** **** 5678". (slice + replace / шаблон)
+
+Ініціали: із "Oksana Zalivan" зроби "O.Z.". (split + charAt + toUpperCase + join)
+
+Видалити зайві пробіли: перетвори " a b c " у "a b c". (trim + split(/\s+/) + join(" "))
+
+Перевір email (простенько): рядок має містити "@" і "." після @. (includes / indexOf / lastIndexOf)
+
+Витяг домену з URL: з "https://sub.domain.com/path?q=1" отримай "sub.domain.com". (split по "://" і "/" або URL API якщо дозволено, але тут — методи рядків)
 */
