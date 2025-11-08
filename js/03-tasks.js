@@ -27,19 +27,19 @@
 
 // const daysUntilDeadline = Number(prompt('Enter deadline'));
 
-const userAge = 18;
-const userBalance = 500;
-const isVip = true;
+// const userAge = 18;
+// const userBalance = 500;
+// const isVip = true;
 
-if (isVip) {
-  console.log('Ласкаво просимо.');
-} else if (userAge >= 18) {
-  console.log('Проходьте');
-} else if (userBalance > 100) {
-  console.log('Проходь через ті двері.');
-} else {
-  console.log('Ми вас не пропустимо');
-}
+// if (isVip) {
+//   console.log('Ласкаво просимо.');
+// } else if (userAge >= 18) {
+//   console.log('Проходьте');
+// } else if (userBalance > 100) {
+//   console.log('Проходь через ті двері.');
+// } else {
+//   console.log('Ми вас не пропустимо');
+// }
 
 // if (daysUntilDeadline === 0) {
 //   console.log('Today');

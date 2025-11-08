@@ -131,32 +131,32 @@
 
 // console.log(mult(5, 2) + mult(7, 7));
 
-function foo() {
-    for (let i = 1; i < 1000; i++) {
-        if (i % 7 === 0 && i % 12 === 0) {
-        break;
-        }
+// function foo() {
+//     for (let i = 1; i < 1000; i++) {
+//         if (i % 7 === 0 && i % 12 === 0) {
+//         break;
+//         }
 
-    console.log('iteration');
-    }
+//     console.log('iteration');
+//     }
 
-    for (let i = 1; i < 1000; i++) {
-        if (i % 7 === 0 && i % 12 === 0) {
-        break;
-        }
+//     for (let i = 1; i < 1000; i++) {
+//         if (i % 7 === 0 && i % 12 === 0) {
+//         break;
+//         }
 
-        console.log('iteration');
-    }
+//         console.log('iteration');
+//     }
 
-    for (let i = 1; i < 1000; i++) {
-        if (i % 7 === 0 && i % 12 === 0) {
-        return i;
-        }
+//     for (let i = 1; i < 1000; i++) {
+//         if (i % 7 === 0 && i % 12 === 0) {
+//         return i;
+//         }
 
-        console.log('iteration');
-    }
-}
+//         console.log('iteration');
+//     }
+// }
 
-const x = foo();
+// const x = foo();
 
-console.log(x);
+// console.log(x);

@@ -22,7 +22,7 @@
 // }
 //!======================================================
 // const userAge = 18;
-const userBalance = 1300;
+// const userBalance = 1300;
 // const isBoss = true;
 
 // if (1300 > 1000) {

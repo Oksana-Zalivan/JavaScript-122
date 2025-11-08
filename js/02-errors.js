@@ -7,8 +7,8 @@
  *
  */
 
-const username = "Mango";
+// const username = "Mango";
 
-let age = 20;
+// let age = 20;
 
-const price = 200;
+// const price = 200;
