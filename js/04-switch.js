@@ -1,6 +1,5 @@
 /**
  * Оператор switch
- */
 
 const username = 'Mango';
 
@@ -19,6 +18,8 @@ switch (username) {
     // command4;
     break;
 }
+*/
+
 /**
  * Виконай рефакторинг коду задачі використовуючи switch.
  *
@@ -26,7 +27,6 @@ switch (username) {
  * Якщо до дедлайну 1 день - виведи рядок "Tomorrow"
  * Якщо до дедлайну 2 дні - виведи рядок "Overmorrow"
  * Якщо до дедлайну 3+ днів - виведи рядок "Date in the future"
- */
 
 const daysUntilDeadline = 5;
 
@@ -56,6 +56,7 @@ switch (daysUntilDeadline) {
   default:
     console.log('Date in the future');
 }
+*/
 
 /*
  * Напиши скрипт выбора опции доставки товара.
@@ -69,22 +70,22 @@ switch (daysUntilDeadline) {
  * - Виконала
  */
 
-const option = 1;
-let message = 'Ви можете забрати товар завтра з 12:00 в нашому офісі';
+// const option = 1;
+// let message = 'Ви можете забрати товар завтра з 12:00 в нашому офісі';
 
-switch (option) {
-  case 1:
-    message = 'Ви можете забрати товар завтра з 12:00 в нашому офісі';
-    break;
+// switch (option) {
+//   case 1:
+//     message = 'Ви можете забрати товар завтра з 12:00 в нашому офісі';
+//     break;
   
-  case 2:
-    message = 'Перевізник доставить ваше замовлення завтра з 9:00 до 18:00';
-    break;
+//   case 2:
+//     message = 'Перевізник доставить ваше замовлення завтра з 9:00 до 18:00';
+//     break;
   
-  case 3:
-    message = 'Посилка буде відправлена сьогодні';
-    break;
-  default:
-    message = 'Вам зателефонує менеджер';
-}
-console.log(message);
+//   case 3:
+//     message = 'Посилка буде відправлена сьогодні';
+//     break;
+//   default:
+//     message = 'Вам зателефонує менеджер';
+// }
+// console.log(message);
