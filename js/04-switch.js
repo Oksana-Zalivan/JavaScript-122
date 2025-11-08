@@ -1,22 +1,22 @@
 /**
  * Оператор switch
 
-const username = 'Mango';
+// const username = 'Mango';
 
-switch (username) {
-  case 'Mango':
+// switch (username) {
+//   case 'Mango':
     // command1;
     // command2;
     // command3;
     // command4;
-    break;
+  //   break;
 
-  case 'hello':
+  // case 'hello':
     // command1;
     // command2;
     // command3;
     // command4;
-    break;
+    // break;
 }
 */
 
@@ -28,35 +28,34 @@ switch (username) {
  * Якщо до дедлайну 2 дні - виведи рядок "Overmorrow"
  * Якщо до дедлайну 3+ днів - виведи рядок "Date in the future"
 
-const daysUntilDeadline = 5;
+// const daysUntilDeadline = 5;
 
-if (daysUntilDeadline === 0) {
-  console.log('Today');
-} else if (daysUntilDeadline === 1) {
-  console.log('Tomorrow');
-} else if (daysUntilDeadline === 2) {
-  console.log('Overmorrow');
-} else {
-  console.log('Date in the future');
-}
+// if (daysUntilDeadline === 0) {
+//   console.log('Today');
+// } else if (daysUntilDeadline === 1) {
+//   console.log('Tomorrow');
+// } else if (daysUntilDeadline === 2) {
+//   console.log('Overmorrow');
+// } else {
+//   console.log('Date in the future');
+// }
 
-switch (daysUntilDeadline) {
-  case 0:
-    console.log('Today');
-    break;
+// switch (daysUntilDeadline) {
+//   case 0:
+//     console.log('Today');
+//     break;
 
-  case 1:
-    console.log('Tomorrow');
-    return;
+//   case 1:
+//     console.log('Tomorrow');
+//     return;
 
-  case 2:
-    console.log('Overmorrow');
-    break;
+//   case 2:
+//     console.log('Overmorrow');
+//     break;
+//   default:
+//     console.log('Date in the future');
+// }
 
-  default:
-    console.log('Date in the future');
-}
-*/
 
 /*
  * Напиши скрипт выбора опции доставки товара.

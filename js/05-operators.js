@@ -88,7 +88,7 @@
 
 //!======================================================
 
-let x = 10;
+// let x = 10;
 
 // console.log(x++); // x += 1;
 // console.log(x);
@@ -103,7 +103,7 @@ let x = 10;
 // console.log(++x);
 // console.log(x);
 
-false && 0;
+// false && 0;
 
 // '' ?? 0
 // false ?? 0
