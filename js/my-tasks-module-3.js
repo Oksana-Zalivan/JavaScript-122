@@ -267,21 +267,55 @@
 
 // Є масив const bools = [true, true, false, true];
 // За допомогою for...of перевір, чи є в масиві хоча б один false.
-const bools = [true, true, false, true];
-
+// const bools = [true, true, false, true];
+// let res = false;
+// for (const bool of bools) {
+//     if (bool === false) {
+//         res = true;
+//         break;
+//     }
+// }
+// console.log(res);
 
 
 // Є масив const users = ['Olya', 'Max', 'Ira'];
 // За допомогою for...of виведи повідомлення "Hello, Olya", "Hello, Max" і т.д.
+// const users = ['Olya', 'Max', 'Ira'];
+// const arr = [];
+// for (const user of users) {
+//     arr.push(`Hello, ${user}`,);
+// }
+// console.log(arr);
+
 
 // Є масив чисел. За допомогою for...of створи новий масив, де кожне число буде змінено знаком (5 → -5, -3 → 3).
+// const nums = [2, -8, 6, 3, -5, -4];
+// const arr = [];
+// for (const num of nums) {
+//     arr.push(num * -1);
+// }
+// console.log(arr);
+
 
 // Є масив const nums = [1, 2, 3, 4, 5, 6];
 // За допомогою for...of створи новий масив тільки з парними числами.
+// const nums = [1, 2, 3, 4, 5, 6];
+// const arr = [];
+// for (const num of nums) {
+//     if (num % 2 === 0) {
+//         arr.push(num);
+//     }
+// }
+// console.log(arr);
+
 
 // Є масив рядків. За допомогою for...of порахуй загальну кількість символів у всіх рядках.
-
-
+// const words = ["Hello", "my", "dear", "friend"];
+// let totalSymbols = 0;
+// for (const word of words) {
+//     totalSymbols += word.length;
+// }
+// console.log(totalSymbols);
 
 // 4. 30 вправ по методах масиву
 // Методи: join, slice, splice, concat, indexOf, lastIndexOf, split, includes, push, pop, shift, unshift, .length, length - 1.
