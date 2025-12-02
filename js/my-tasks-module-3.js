@@ -317,118 +317,290 @@
 // }
 // console.log(totalSymbols);
 
+
+
 // 4. 30 вправ по методах масиву
 // Методи: join, slice, splice, concat, indexOf, lastIndexOf, split, includes, push, pop, shift, unshift, .length, length - 1.
 
 // Є масив ['I', 'love', 'JS'].
 // Використай join, щоб отримати рядок "I love JS".
+// const arr = ['I', 'love', 'JS'];
+// const message = arr.join(" ");
+// console.log(message);
+
 
 // Є масив ['apple', 'banana', 'orange', 'kiwi'];
 // За допомогою slice створи новий масив тільки з ['banana', 'orange'].
+// const fruits = ['apple', 'banana', 'orange', 'kiwi'];
+// const arr = fruits.slice(1, 3);
+// console.log(arr);
+
 
 // Є масив ['a', 'b', 'c', 'd'];
 // За допомогою splice видали елемент 'c'.
+// const arr = ['a', 'b', 'c', 'd'];
+// const newArr = arr.splice(2, 1);
+// console.log(arr);
+
 
 // Є масив ['red', 'green', 'blue']; та ['yellow', 'black'];
 // Об’єднай їх в один масив за допомогою concat.
+// const arr1 = ['red', 'green', 'blue'];
+// const arr2 = ['yellow', 'black'];
+// const colors = arr1.concat(arr2);
+// console.log(colors);
+
 
 // Є масив ['js', 'html', 'css', 'js'];
 // За допомогою indexOf знайди перший індекс 'js'.
+// const arr = ['js', 'html', 'css', 'js'];
+// console.log(arr.indexOf('js'));
+
 
 // Той самий масив ['js', 'html', 'css', 'js'];
 // За допомогою lastIndexOf знайди останній індекс 'js'.
+// const arr = ['js', 'html', 'css', 'js'];
+// console.log(arr.lastIndexOf('js'));
+
 
 // Є рядок "apple, banana, kiwi"
 // Розбий його на масив фруктів за допомогою split.
+// const fruits = "apple, banana, kiwi";
+// const arr = fruits.split(",");
+// console.log(arr);
+
 
 // Є масив ['cat', 'dog', 'parrot'];
 // За допомогою includes перевір, чи є в масиві 'dog'.
+// const pets = ['cat', 'dog', 'parrot'];
+// console.log(pets.includes('dog'));
+
 
 // Є масив чисел. За допомогою push додай у кінець нове число й перевір змінену довжину.
+// const nums = [5, 6, 8, 3, 1, 17, 9, 46];
+// nums.push(35);
+// console.log(nums.length);
+
 
 // Є масив. За допомогою pop видали останній елемент і збережи його в змінну.
+// const arr = [45, 18, 53, 7, 16, 28];
+// let a = arr.pop();
+// console.log(a);
+
 
 // Є масив. За допомогою shift видали перший елемент і виведи його.
+// const arr = [45, 18, 53, 7, 16, 28];
+// console.log(arr.shift());
+
 
 // Є масив. За допомогою unshift додай елемент на початок масиву та виведи нову довжину.
+// const arr = [45, 18, 53, 7, 16, 28];
+// arr.unshift(98);
+// console.log(arr.length);
+
 
 // Напиши код, який, використовуючи .length, виводить останній елемент масиву через індекс length - 1.
+// const arr = [45, 18, 53, 7, 16, 83];
+// console.log(arr[arr.length - 1]);
+
 
 // Є масив ['a', 'b', 'c', 'd'];
 // За допомогою slice створи копію всього масиву.
+// const arr = ['a', 'b', 'c', 'd'];
+// const arr2 = arr.slice(0);
+// console.log(arr2);
+
 
 // Є масив ['a', 'b', 'c', 'd'];
 // За допомогою splice заміни 'b' і 'c' на 'x', 'y'.
+// const arr = ['a', 'b', 'c', 'd'];
+// arr.splice(1, 2, 'x', 'y');
+// console.log(arr);
+
 
 // Є два масиви nums1 = [1, 2] та nums2 = [3, 4, 5];
 // Об’єднай у один масив і знайди його довжину.
+// const nums1 = [1, 2];
+// const nums2 = [3, 4, 5];
+// const res = [].concat(nums1, nums2);
+// console.log(res.length);
+
 
 // Є рядок "JS is awesome"
 // За допомогою split перетвори його в масив слів, а потім за допомогою join з’єднай назад через '-'.
+// const message = "JS is awesome";
+// const arr = message.split(" ");
+// const res = arr.join("-");
+// console.log(res);
+
 
 // Є масив const nums = [1, 2, 3, 4, 5];
 // За допомогою slice отримай останні два елементи масиву.
+// const nums = [1, 2, 3, 4, 5];
+// const arr = nums.slice(3);
+// console.log(arr);
+
 
 // Є масив const nums = [1, 2, 3, 4, 5];
 // За допомогою splice встав у середину (після 2) число 999, не видаляючи елементи.
+// const nums = [1, 2, 3, 4, 5];
+// nums.splice(2, 0, 999);
+// console.log(nums);
+
 
 // Є масив ['html', 'css'];
 // Послідовно використай push, щоб додати 'js', 'react', потім pop, щоб забрати останній елемент.
 // Перевір, що залишилося.
+// const arr = ['html', 'css'];
+// arr.push('js', 'react');
+// arr.pop();
+// console.log(arr);
+
 
 // Є масив ['apple', 'banana', 'orange'];
 // За допомогою includes перевір, чи є 'kiwi', і якщо ні — додай його через push.
+// const fruits = ['apple', 'banana', 'orange'];
+// if (!fruits.includes('kiwi')) {
+//     fruits.push('kiwi');
+// }
+// console.log(fruits);
 
 // Є рядок "a-b-c-d"
 // За допомогою split перетвори в масив, потім за допомогою splice видали 'c', і за допомогою join з’єднай назад.
+// const alph = "a-b-c-d";
+// const arr = alph.split("-");
+// arr.splice(2, 1);
+// console.log(arr);
+
 
 // Є масив const nums = [1, 2, 3, 4, 5];
 // Використай .length, щоб написати цикл, що виводить елементи у зворотному порядку, використовуючи індекс length - 1 - i.
+// const nums = [1, 2, 3, 4, 5];
+// const arr = [];
+// for (let i = 0; i < nums.length; i++){
+//     arr.push(nums[nums.length-1-i]);
+// }
+// console.log(arr);
+
 
 // Є масив ['one', 'two'];
 // За допомогою unshift додай 'zero' і перевір, що 'zero' тепер перший елемент.
+// const arr = ['one', 'two'];
+// arr.unshift('zero');
+// console.log(arr[0]);
+
 
 // Є масив ['x', 'y', 'z', 'y'];
 // За допомогою indexOf і lastIndexOf знайди першу і останню позицію 'y'.
+// const arr = ['x', 'y', 'z', 'y'];
+// console.log(arr.indexOf('y'));
+// console.log(arr.lastIndexOf('y'));
+
 
 // Є масив const nums = [10, 20, 30];
 // Напиши код, який видаляє останній елемент без pop, використовуючи тільки .length (зміни значення length).
+// const nums = [10, 20, 30];
+// nums.length = nums.length - 1;
+// console.log(nums);
+
 
 // Є масив ['red', 'green', 'blue'];
 // За допомогою slice зроби новий масив без першого елемента.
+// const colors = ['red', 'green', 'blue'];
+// const arr = colors.slice(1);
+// console.log(arr);
+
 
 // Є масив рядків. За допомогою join створи рядок, у якому елементи будуть розділені переносом рядка ('\n').
+// const arr = ["first", "second", "third", "fourth"];
+// const res = arr.join('\n');
+// console.log(res);
+
 
 // Є масив ['a', 'b', 'c'];
 // За допомогою splice видали всі елементи, починаючи з індексу 1.
+// const arr = ['a', 'b', 'c'];
+// arr.splice(1);
+// console.log(arr);
+
 
 // Є масив ['js', 'ts']; і рядок "node,react"
 // Розбий рядок через split на масив і за допомогою concat об’єднай із першим масивом.
-
+// const arr = ['js', 'ts'];
+// const str = "node,react";
+// const newStr = str.split(',');
+// const res = arr.concat(newStr);
+// console.log(res);
 
 
 
 // 5. 10 вправ по псевдомасиву
 // Псевдомасиви: arguments, NodeList, HTMLCollection тощо.
-
 // Напиши функцію sum(), яка приймає будь-яку кількість аргументів і через arguments рахує їхню суму.
+// function sum() {
+//     const args = Array.from(arguments);
+//     let total = 0;
+//     for (const item of args) {
+//         total += item;
+//     }
+//     console.log(total);
+//     return total;
+// }
+// sum(5, 18, 62, 23);
+
 
 // У функції logArgs(), виведи всі аргументи в консоль, перетворивши arguments на справжній масив (через Array.from або [...arguments]).
+// function logArgs() {
+//     const args = Array.from(arguments);
+//     console.log(args);
+//     return args;
+// }
+// logArgs(5, 12, 23, 48, 76);
+
+
 
 // Напиши функцію, яка повертає масив тільки парних аргументів, використовуючи arguments і ітерацію.
+// function foo() {
+//     const args = Array.from(arguments);
+//     const arr = [];
+//     for (let i = 0; i < args.length; i++){
+//         if (args[i] % 2 === 0) {
+//             arr.push(args[i]);
+//         }
+//     }
+//     console.log(arr);
+//     return arr;
+// }
+// foo(4, 29, 57, 6, 13);
+
 
 // Уяви, що ти отримала NodeList з document.querySelectorAll('li').
 // Напиши псевдокод (без реального DOM), як би ти пройшлася по цьому NodeList і зібрала тексти всіх елементів у масив.
 
+
+
 // Напиши функцію toArray(), яка приймає псевдомасив (наприклад, об’єкт з властивостями 0,1,2,length) і повертає справжній масив.
 
+
+
 // Напиши функцію firstArg(), яка повертає перший аргумент з arguments або undefined, якщо аргументів немає.
+function firstArg() {
+    const args = Array.from(arguments);
+    
+}
+
 
 // Напиши функцію, яка за допомогою arguments рахує, скільки рядків було передано як аргументи.
 
+
+
 // Напиши функцію, яка приймає будь-яку кількість аргументів і повертає масив довжин усіх рядкових аргументів.
 
+
+
 // Напиши функцію, яка з arguments отримує останній аргумент, використовуючи arguments.length - 1.
+
+
 
 // Напиши функцію, яка за допомогою arguments перевіряє, чи є серед аргументів хоча б одне число більше 100.
 
