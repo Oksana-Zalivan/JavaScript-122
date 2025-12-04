@@ -535,7 +535,7 @@
 
 
 // 5. 10 вправ по псевдомасиву
-// Псевдомасиви: arguments, NodeList, HTMLCollection тощо.
+// Псевдомасиви: arguments.
 // Напиши функцію sum(), яка приймає будь-яку кількість аргументів і через arguments рахує їхню суму.
 // function sum() {
 //     const args = Array.from(arguments);
@@ -574,77 +574,257 @@
 // foo(4, 29, 57, 6, 13);
 
 
-// Уяви, що ти отримала NodeList з document.querySelectorAll('li').
-// Напиши псевдокод (без реального DOM), як би ти пройшлася по цьому NodeList і зібрала тексти всіх елементів у масив.
+// Є псевдомасив: const pseudo = {0: "a", 1: "b", 2: "c", 3: "d", length: 4
+// }; Створи справжній масив усіх елементів з цього псевдомасиву.
+// const pseudo = {
+//     0: "a",
+//     1: "b",
+//     2: "c",
+//     3: "d",
+//     length: 4
+// };
+// const arr = [];
+// for (let i = 0; i < pseudo.length; i++){
+//     arr.push(pseudo[i]);
+// }
+// console.log(arr);
 
 
-
-// Напиши функцію toArray(), яка приймає псевдомасив (наприклад, об’єкт з властивостями 0,1,2,length) і повертає справжній масив.
-
+// Напиши функцію lastElement(), яка приймає псевдомасив (наприклад):
+// const nums = {0: 10, 1: 20, 2: 30, length: 3}; Функція повинна повернути останній елемент
+// const nums = {
+//     0: 10,
+//     1: 20,
+//     2: 30,
+//     length: 3
+// };
+// function lastElement(pseudo) {
+//     const lastIndex = pseudo.length - 1;
+//     return pseudo[lastIndex];
+// }
+// console.log(lastElement(nums));
 
 
 // Напиши функцію firstArg(), яка повертає перший аргумент з arguments або undefined, якщо аргументів немає.
-function firstArg() {
-    const args = Array.from(arguments);
-    
-}
+// function firstArg() {
+//     const args = Array.from(arguments);
+//     if (args.length === 0) {
+//         return undefined;
+//     }
+//     return args[0];
+// }
+// console.log(firstArg(81, 45, 67, 32));
+// console.log(firstArg());
 
 
 // Напиши функцію, яка за допомогою arguments рахує, скільки рядків було передано як аргументи.
-
+// function foo() {
+//     const args = Array.from(arguments);
+//     let count = 0;
+//     for (const item of args) {
+//         if (typeof item === 'string') {
+//             count++;
+//         }
+//     }
+//     console.log(count);
+//         return count;
+// }
+// foo(8, 'five', 13, 25, 'seven', 9);
 
 
 // Напиши функцію, яка приймає будь-яку кількість аргументів і повертає масив довжин усіх рядкових аргументів.
-
+// function foo() {
+//     const args = Array.from(arguments);
+//     const arr = [];
+//     for (const item of args) {
+//         if (typeof item === 'string') {
+//             arr.push(item.length);
+//         }
+//     }
+//     console.log(arr);
+//     return arr;
+// }
+// foo("5157", "46546765", "21", "946");
 
 
 // Напиши функцію, яка з arguments отримує останній аргумент, використовуючи arguments.length - 1.
-
+// function lastElement() {
+//     const args = Array.from(arguments);
+//     const lastIndex = args.length - 1;
+//     return args[lastIndex];
+// }
+// console.log(lastElement(15, 64, 3, 72, 11));
 
 
 // Напиши функцію, яка за допомогою arguments перевіряє, чи є серед аргументів хоча б одне число більше 100.
-
+// function foo() {
+//     const args = Array.from(arguments);
+//     for (let i = 0; i < args.length; i++){
+//         if (args[i] > 100) {
+//             console.log(true);
+//             break;
+//         }
+//     }
+// }
+// foo(52, 34, 16, 9, 28, 751, 147);
 
 
 
 // 6. 10 вправ по області видимості (scope)
 // Створи змінну message у глобальній області, а всередині функції створи локальну змінну з таким самим ім’ям.
 // Поясни, яке значення буде виведено всередині функції та зовні.
+// const message = "Hello, Kseniya!";
+// function foo() {
+//     const message = "Bye, Kseniya!"
+//     console.log(message);
+// }
+// console.log(message);
+
 
 // Напиши приклад з let у блоці if (...) {}, де змінна буде недоступна поза блоком.
+// if (true) {
+//     let message = "Hello!";
+//     console.log(message);
+// }
+
 
 // Створи змінну count у глобальній області.
 // Напиши функцію, яка збільшує count на 1. Виклич її кілька разів і поясни, як працює доступ до змінної.
+// const count = 1500;
+// function foo(value) {
+//     const total = value + 1;
+//     console.log(total);
+// }
+// foo(count);
+
 
 // Напиши код з циклом for, у якому лічильник оголошений через var.
 // Перевір, чи буде змінна доступна поза циклом.
+// const arr = [15, 6, 8, 42, 37];
+// for (var i = 0; i < arr.length; i++){
+//     const res = arr[i] + 1;
+//     console.log(res);
+// }
+// console.log(i);
+
 
 // Те саме, але з let. Поясни різницю.
+// const arr = [15, 6, 8, 42, 37];
+// for (let i = 0; i < arr.length; i++){
+//     const res = arr[i] + 1;
+//     console.log(res);
+// }
+// console.log(i);
+
 
 // Напиши функцію всередині функції, де внутрішня функція має доступ до змінних зовнішньої (лексичне оточення).
 // Опиши, що можна, а що не можна побачити.
+// function foo1(a, b) {
+//     const res1 = a + b;
+//     function foo2(c, d) {
+//         const res2 = c + d;
+//         const total = res1 + res2;
+//         console.log(total);
+//     }
+//     foo2(12, 7);
+// }
+// foo1(8, 6);
+
 
 // Створи блок if (true) { ... } з змінними var, let, const всередині.
 // Перевір, які з них будуть доступні зовні.
+// if (true) {
+//     var x = 45;
+//     const y = 15;
+//     let z = 25;
+//     let res = x / y + z;
+//     console.log(res);
+// }
+// console.log(x);
+
 
 // Напиши приклад, де змінна з однаковою назвою існує в глобальній області, в функції та в блоці.
 // Простеж, яке значення буде використано де.
+// let x = 56;
+// function foo(value) {
+//     let x = 49;
+//     const sum = value + x;
+//     if (value > 50) {
+//         let x = 5;
+//         const res = value - x;
+//         console.log(x);
+//         console.log(res);
+//     }
+//     console.log(x);
+//     console.log(sum);
+// }
+// foo(105);
+// foo(12);
+// console.log(x);
+
 
 // Створи функцію, яка оголошує змінну без ключового слова (x = 10;).
 // Перевір, де вона з’явиться (глобальна / локальна) й чому це погано.
+// function foo(value) {
+//     const x = 10;
+//     let res = value * x;
+//     console.log(res);
+// }
+// foo(25);
+// foo(37);
+
 
 // Напиши приклад з двома функціями, де одна функція викликає іншу, а друга намагається прочитати змінну з першої.
 // Поясни, чи буде ця змінна доступна.
-
+// function foo1(a) {
+//     let c = 15;
+//     const res1 = a - c;
+//     function foo2(b) {
+//         let d = 13;
+//         const res2 = b + d;
+//         console.log(res1 + res2);
+//     }
+//     foo2(4);
+// }
+// foo1(33);
 
 
 
 // 7. 10 вправ по рекурсії
 // Напиши рекурсивну функцію, яка рахує факторіал числа n.
+// function factorial(n) {
+//     if (n === 1) {
+//         return 1;
+//     }
+//     return factorial(n - 1) * n;
+// }
+// console.log(factorial(5));
+// console.log(factorial(1));
+// console.log(factorial(20));
+
 
 // Напиши рекурсивну функцію, яка рахує суму чисел від 1 до n.
+// function sum(n) {
+//     if (n === 1) {
+//         return 1;
+//     }
+//     return sum(n - 1) + n;
+// }
+// console.log(sum(9));
+// console.log(sum(1));
+
 
 // Напиши рекурсивну функцію, яка виводить числа від n до 1 (зворотний відлік).
+function foo(n) {
+    if (i === foo(n)) {
+        return foo(n);
+        }
+    return foo(n) - 1;
+    
+    }
+}
+console.log(foo(6));
+
 
 // Напиши рекурсивну функцію для пошуку елемента в масиві (без indexOf), яка повертає true/false.
 
