@@ -1,16 +1,24 @@
 // 1) Створення об’єктів (10)
 
 // Створи об’єкт user з властивостями: name, age, isAdmin.
+// const user = {
+//     name: 'Oksana',
+//     age:37,
+//     isAdmin: true
+// };
 
-const user = {
-    name: 'Oksana',
-    age:37,
-    isAdmin: true
-};
-console.log(user);
 
 
 // Створи об’єкт book з властивостями: title, author, year, pages.
+const book = {
+    title: 'Oh no!',
+    author: 'Sarah Bennet',
+    year: 1965,
+    pages: 522,
+};
+console.log(book);
+
+
 
 // Створи об’єкт car з вкладеним об’єктом engine (наприклад: type, power).
 
