@@ -649,55 +649,138 @@
 
 
 // Зроби grouped, де ключі — перші літери слів з масиву ["cat","rabbit","dog"].
-const arr = ["cat", "rabbit", "dog"];
-const grouped = {
-    [arr[0].slice(0, 1)]: ["cat"],
-    [arr[1].slice(0, 1)]: ["rabbit"],
-    [arr[2].slice(0, 1)]: ["dog"]
-};
-console.log(grouped);
+// const arr = ["cat", "rabbit", "dog"];
+// const grouped = {
+//     [arr[0].slice(0, 1)]: ["cat"],
+//     [arr[1].slice(0, 1)]: ["rabbit"],
+//     [arr[2].slice(0, 1)]: ["dog"]
+// };
+// console.log(grouped);
 
 
 
 // 6) Перебір об’єкта через for...in (10)
 // Є об’єкт user. Виведи в консоль усі ключі.
-
+// const user = {
+//     name: "Oksana",
+//     age: 38
+// };
+// for (const i in user) {
+//     console.log(`user[${i}]`);
+// };
 
 
 // Виведи всі значення.
-
+// const user = {
+//     name: "Oksana",
+//     age: 38
+// };
+// for (const i in user) {
+//     console.log(user[i]);
+// };
 
 
 // Виведи пари у форматі "key: value".
-
+// const user = {
+//     name: "Oksana",
+//     age: 38
+// };
+// for (const i in user) {
+//     console.log(`${i}:`, user[i]);
+// };
 
 
 // Порахуй кількість властивостей в об’єкті через for...in.
-
+// const user = {
+//     name: "Oksana",
+//     age: 38
+// };
+// let count = 0;
+// for (const key in user) {
+//     count++;
+// };
+// console.log(count);
 
 
 // Знайди суму всіх числових значень в об’єкті stats.
-
+// const stats = {
+//     views: 251,
+//     likes: 1684,
+//     comments: 15
+// };
+// let sum = 0;
+// for (const key in stats) {
+//     sum += stats[key];
+// };
+// console.log(sum);
 
 
 // Створи масив усіх ключів через for...in.
-
+// const stats = {
+//     views: 251,
+//     likes: 1684,
+//     comments: 15
+// };
+// const arr = [];
+// for (const key in stats) {
+//     arr.push(key);
+// };
+// console.log(arr);
 
 
 // Створи масив усіх значень через for...in.
-
+// const stats = {
+//     views: 251,
+//     likes: 1684,
+//     comments: 15
+// };
+// const arr = [];
+// for (const key in stats) {
+//     arr.push(stats[key]);
+// };
+// console.log(arr);
 
 
 // Перевір, чи є в об’єкті хоч одне значення null (через for...in).
+// const stats = {
+//     views: 251,
+//     likes: 1684,
+//     comments: 15
+// };
+// let hasNull = false;
+// for (const key in stats) {
+//     if (stats[key] === null) {
+//         hasNull = true;
+//     }; 
+// };
+// console.log(hasNull);
 
 
 
 // Скопіюй об’єкт у новий (простий shallow copy) через for...in.
-
+// const user = {
+//     name: "Oksana",
+//     age: 38
+// };
+// const copy = {};
+// for (const key in user) {
+//     copy[key] = user[key];
+// };
+// console.log(copy);
 
 
 // Створи filtered, залишивши тільки властивості, де значення — рядок.
-
+const user = {
+    name: "Oksana",
+    age: 38
+};
+let filtered = {};
+for (const key in user) {
+    if (typeof user[key] === "string") {
+        filtered[key] = user[key];
+    };
+};
+console.log(filtered);
 
 
 // Підказка: якщо треба уникати успадкованих ключів — перевіряй Object.hasOwn(obj, key).
